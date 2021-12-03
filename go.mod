@@ -1,13 +1,13 @@
-module gitlab.hamkorbank.uz/libs/tracer
+module github.com/aliykh/tracer
 
 go 1.17
 
 require (
+	github.com/aliykh/log v0.0.1
 	github.com/gin-gonic/gin v1.7.4
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/uber/jaeger-client-go v2.29.1+incompatible
 	github.com/uber/jaeger-lib v2.4.1+incompatible
-	gitlab.hamkorbank.uz/libs/log v0.0.1
 	go.uber.org/zap v1.19.1
 )
 

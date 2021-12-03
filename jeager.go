@@ -2,15 +2,15 @@ package tracer
 
 import (
 	"fmt"
+	"github.com/opentracing/opentracing-go"
 
 	"go.uber.org/zap"
 
-	"github.com/opentracing/opentracing-go"
 	"github.com/uber/jaeger-client-go/config"
 	"github.com/uber/jaeger-client-go/rpcmetrics"
 	"github.com/uber/jaeger-lib/metrics"
 
-	"gitlab.hamkorbank.uz/libs/log"
+	"github.com/aliykh/log"
 )
 
 // InitJaeger -
