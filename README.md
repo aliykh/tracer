@@ -1,15 +1,5 @@
 # Tracer package (opentracing)
 
-## Prerequisites
-To use any gitlab.hamkorbank.uz repos in modules use .bashrc
-```shell
-EXPORT GOPRIVATE=gitlab.hamkorbank.uz 
-```
-## Install
-```shell
-go get gitlab.hamkorbank.uz/libs/tracer
-```
-
 ## Install jaeger via docker compose with minimum configs
 ```yaml
 version: "3.9"
@@ -34,8 +24,8 @@ import (
 	"github.com/opentracing/opentracing-go"
 	"github.com/uber/jaeger-lib/metrics"
 	"github.com/uber/jaeger-lib/metrics/prometheus"
-	"gitlab.hamkorbank.uz/libs/log"
-	openTracer "gitlab.hamkorbank.uz/libs/tracer"
+	"github.com/aliykh/log"
+	openTracer "github.com/aliykh/tracer"
 )
 
 var ServiceName = "service_name"
